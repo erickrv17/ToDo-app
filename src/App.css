@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+  /*background-color: white;*/
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  min-height: 500px;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#toDo-form{
+  margin: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#toDo-form input{
+  padding: 0 20px;
+  height: 40px;
+  margin-top:20px;
+  margin-left: 20px;
+  margin-right: 5px;
+  border-radius: 10px;
+  color: #6a11cb;
+  font-family: 'Righteous', cursive;
+  font-size: medium;
 }
 
-.App-link {
-  color: #61dafb;
+#toDo-form input::placeholder{
+  color: #6a11cb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#toDo-form input::focus{
+  outline-style: none;
+}
+
+#toDo-form button{
+  height: 40px;
+  width: 50px;
+  border-radius: 10px;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  border: 0;
+  font-family: 'Righteous', cursive;
+  font-size: large;
 }
