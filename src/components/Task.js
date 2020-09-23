@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 
-const Task = ({info}) => {
+const Task = ({name}) => {
     return(
-        <div className="task-Card">
-            <h4>{info}</h4>
+        <div className="tasks-list">
+            <h1>{name}</h1>
         </div>
     )
 }
+
+export default Task;
